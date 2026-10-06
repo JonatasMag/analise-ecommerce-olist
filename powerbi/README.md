@@ -6,10 +6,19 @@ O modelo estrela já sai pronto do ETL em `data/processed/`. Este guia leva cerc
 **Página Inicial → Obter dados → Texto/CSV** e importe os 5 arquivos de `data/processed/`:
 `dim_cliente`, `dim_produto`, `dim_tempo`, `fato_vendas`, `fato_entregas`.
 
-No Power Query, confira os tipos:
-- `dim_tempo[data]` → **Data**
-- colunas `valor_*` e `prazo_entrega_dias` → **Número decimal**
-- colunas `*_sk` e `entregue_com_atraso` → **Número inteiro**
+> ⚠️ **Power BI em português:** os CSVs usam **ponto** como separador decimal (padrão internacional: `72.19`).
+> O Power BI em português entende o ponto como separador de milhar e lê `72.19` como `7.219`, inflando todos os valores.
+> Por isso, as colunas decimais precisam ser convertidas **usando a localidade Inglês (Estados Unidos)**, como abaixo.
+
+No Power Query (**Página Inicial → Transformar dados**):
+
+1. Em `fato_vendas`, selecione `valor_produto`, `valor_frete` e `valor_total` (Ctrl + clique).
+   Botão direito → **Alterar tipo → Usando a localidade…** → Tipo de dados: **Número decimal** · Localidade: **Inglês (Estados Unidos)** → OK.
+   Se o Power Query perguntar, escolha **Substituir atual**.
+2. Em `fato_entregas`, faça o mesmo com `prazo_entrega_dias`.
+3. Em `dim_tempo`, a coluna `data` → **Data**.
+4. Colunas `*_sk`, `prazo_prometido_dias` e `entregue_com_atraso` → **Número inteiro**.
+5. **Fechar e Aplicar**.
 
 ## 2. Relacionamentos (Exibição de modelo)
 Todos **um-para-muitos**, filtro em **direção única** (dimensão → fato):

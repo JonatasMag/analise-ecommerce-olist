@@ -130,7 +130,7 @@ def transformar(fontes: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
         "price": "valor_produto",
         "freight_value": "valor_frete",
     })
-    fato_vendas["valor_total"] = fato_vendas["valor_produto"] + fato_vendas["valor_frete"]
+    fato_vendas["valor_total"] = (fato_vendas["valor_produto"] + fato_vendas["valor_frete"]).round(2)
     fato_vendas = fato_vendas.reset_index(drop=True)
     fato_vendas.insert(0, "venda_sk", fato_vendas.index + 1)
     fato_vendas = fato_vendas[[
