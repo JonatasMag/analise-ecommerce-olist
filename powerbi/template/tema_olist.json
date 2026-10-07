@@ -1,0 +1,93 @@
+{
+  "name": "Olist · Jonatas Magalhães",
+  "dataColors": [
+    "#0D5A92",
+    "#77C0D6",
+    "#092A4A",
+    "#2C81B7",
+    "#B9D3E4",
+    "#5E7080",
+    "#C9A227",
+    "#3D8B6E"
+  ],
+  "foreground": "#142B3D",
+  "foregroundNeutralSecondary": "#5E7080",
+  "foregroundNeutralTertiary": "#8A9AA8",
+  "background": "#FFFFFF",
+  "backgroundLight": "#F1F5F7",
+  "backgroundNeutral": "#D9E4EB",
+  "tableAccent": "#0D5A92",
+  "good": "#3D8B6E",
+  "neutral": "#C9A227",
+  "bad": "#B5473A",
+  "maximum": "#092A4A",
+  "center": "#2C81B7",
+  "minimum": "#D6E8F3",
+  "textClasses": {
+    "callout": {
+      "fontSize": 30,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#092A4A"
+    },
+    "title": {
+      "fontSize": 13,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#092A4A"
+    },
+    "header": {
+      "fontSize": 12,
+      "fontFace": "Segoe UI Semibold",
+      "color": "#092A4A"
+    },
+    "label": {
+      "fontSize": 10,
+      "fontFace": "Segoe UI",
+      "color": "#5E7080"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "transparency": 100
+          }
+        ],
+        "border": [
+          {
+            "show": false
+          }
+        ],
+        "dropShadow": [
+          {
+            "show": false
+          }
+        ],
+        "visualHeader": [
+          {
+            "show": true
+          }
+        ],
+        "title": [
+          {
+            "show": false
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "outspace": [
+          {
+            "color": {
+              "solid": {
+                "color": "#EEF3F6"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

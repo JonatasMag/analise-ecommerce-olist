@@ -66,7 +66,10 @@ Faturamento Ano Anterior =
 
 Formate: `Faturamento` e `Ticket Médio` como moeda (R$); as medidas com `%` como porcentagem.
 
-## 4. Páginas sugeridas
+## 4. Visual pronto
+A pasta [`template/`](template/) tem as imagens de fundo das 3 páginas, o tema de cores e as posições exatas de cada gráfico.
+
+## 5. Páginas sugeridas
 
 **Página 1 — Visão executiva**
 - Cartões: Faturamento, Pedidos, Ticket Médio, % Atraso
@@ -83,10 +86,10 @@ Formate: `Faturamento` e `Ticket Médio` como moeda (R$); as medidas com `%` com
 - Barras: Faturamento por `dim_produto[categoria]` (top 10)
 - Dispersão: Ticket Médio × % Frete por UF
 
-## 5. Conferência
+## 6. Conferência
 Com tudo montado, os cartões sem filtro devem mostrar:
 **Faturamento R$ 15.373.120 · Pedidos 96.211 · Ticket médio R$ 159,79 · % Atraso 6,8%**.
 Se algum número divergir, revise os relacionamentos.
 
-## 6. Publicar
+## 7. Publicar
 **Arquivo → Publicar → Publicar na Web** gera um link público. Cole esse link no campo *Website* do repositório no GitHub: ele vira o botão "Ver no ar" no portfólio. Depois salve uma captura do dashboard como `reports/figures/dashboard.png`.
