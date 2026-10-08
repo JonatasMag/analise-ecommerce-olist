@@ -23,6 +23,21 @@
 
 ---
 
+## Dashboard Power BI
+
+Painel com 3 páginas, montado sobre o modelo estrela gerado pelo ETL. O guia de montagem, as medidas DAX e os modelos visuais estão em [`powerbi/`](powerbi/).
+
+**Visão Executiva:** indicadores principais, evolução mensal e faturamento por estado
+![Dashboard: Visão Executiva](reports/figures/dashboard/01_visao_executiva.png)
+
+**Logística:** prazo médio e taxa de atraso por estado e por mês
+![Dashboard: Logística](reports/figures/dashboard/02_logistica.png)
+
+**Produtos:** categorias e relação entre peso do frete e ticket médio
+![Dashboard: Produtos](reports/figures/dashboard/03_produtos.png)
+
+---
+
 ## Perguntas de negócio e respostas
 
 ### Onde está o faturamento?
@@ -127,7 +142,9 @@ erDiagram
 │   └── etl.py               # extração, tratamento e modelagem dimensional
 ├── reports/figures/         # gráficos usados neste README
 └── powerbi/
-    └── README.md            # guia de montagem do dashboard
+    ├── README.md            # guia de montagem do dashboard e medidas DAX
+    ├── template/            # planos de fundo das páginas e tema de cores
+    └── dados/               # fato_vendas em centavos (Power BI em português)
 ```
 
 ## Como executar
