@@ -5,7 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3.10+-0d5a92?logo=python&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-ETL-0d5a92?logo=pandas&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-SQLite-0d5a92?logo=sqlite&logoColor=white)
-![Power BI](https://img.shields.io/badge/Power%20BI-modelo%20pronto-0d5a92?logo=powerbi&logoColor=white)
+[![Power BI](https://img.shields.io/badge/Power%20BI-dashboard%20ao%20vivo-f2c811?logo=powerbi&logoColor=black)](https://app.powerbi.com/view?r=eyJrIjoiZGZlOGE4NjMtM2UwMi00ODZmLTg2MjItMDk4ZmM1Y2VkY2FlIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9)
 
 ---
 
@@ -25,7 +25,9 @@
 
 ## Dashboard Power BI
 
-Painel com 3 páginas, montado sobre o modelo estrela gerado pelo ETL. O guia de montagem, as medidas DAX e os modelos visuais estão em [`powerbi/`](powerbi/).
+### [▶ Abrir o dashboard interativo](https://app.powerbi.com/view?r=eyJrIjoiZGZlOGE4NjMtM2UwMi00ODZmLTg2MjItMDk4ZmM1Y2VkY2FlIiwidCI6IjY1OWNlMmI4LTA3MTQtNDE5OC04YzM4LWRjOWI2MGFhYmI1NyJ9)
+
+Painel com 3 páginas, montado sobre o modelo estrela gerado pelo ETL. No link acima dá para filtrar por ano, estado e categoria. O guia de montagem, as medidas DAX e os modelos visuais estão em [`powerbi/`](powerbi/).
 
 **Visão Executiva:** indicadores principais, evolução mensal e faturamento por estado
 ![Dashboard: Visão Executiva](reports/figures/dashboard/01_visao_executiva.png)
